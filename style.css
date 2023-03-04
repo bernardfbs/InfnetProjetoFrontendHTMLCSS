@@ -1,0 +1,264 @@
+body {
+  margin: 0px;
+  font-family: Oswald;
+  background-color: white;
+  color:  rgb(63, 122, 72);
+}
+
+/* Início do cabeçalho */
+
+#appbar {
+  position: sticky;
+  background-color: rgb(47, 117, 5);
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  top: 0; left: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  
+}
+
+.appbar-logo {
+  width: 200px;
+}
+
+
+.appbar-esquerda {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.appbar-direita {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.appbar-link {
+  margin: 10px;
+  font-size: 16px;
+  display: flex;
+  gap: 30px;
+}
+
+.appbar-end {
+  display: none;
+}
+
+.appbar-menu {
+  width: 30px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+a:hover{color:black}
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(47, 117, 5);
+}
+
+/* Fim do cabeçalho */
+
+/* Início do rodapé */
+
+.footer {
+  background-color: rgb(47, 117, 5);
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* Fim do rodapé */
+
+/* Início da página index */
+
+.mockup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.textoaolado {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 200px;
+}
+
+.texto1 {
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(47, 117, 5);
+}
+
+.texto2 {
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(47, 117, 5);
+}
+
+.texto3 {
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(47, 117, 5);
+}
+
+span {
+  font-weight: 900;
+}
+
+/* Fim da página index */
+
+/* Início da página Soluções */
+
+.mockup2 {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card1{
+  width: 350px;
+  background-color: rgb(47, 117, 5);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.card1-img {
+  width: 350px;
+  height: 250px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-texto {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Fim da página Soluções */
+
+/* Início da página Formulário */
+
+.form-contato-container {
+  
+  color: rgb(47, 117, 5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  color: rgb(47, 117, 5);
+}
+
+.form-titulo {
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  color: rgb(47, 117, 5);
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item-inline {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.form-campo-texto {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.form-campo-textarea {
+  padding: 8px;
+  resize: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-botao-enviar {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-botao-enviar:hover {
+  background-color: rgb(47, 117, 5);
+  color: white;
+}
+
+.reset-checkbox-radio {
+  margin: 0;
+}
+
+/* Fim da página formulário */
+
+
+
+@media (max-width: 800px) {
+#appbar {
+  flex-direction: column;
+}
+
+.mockup-img {
+  width: 60%;
+  margin: auto;
+}
+  
+.appbar-link {
+  margin: 5px;
+  font-size: 19px;
+}
+  
+}
