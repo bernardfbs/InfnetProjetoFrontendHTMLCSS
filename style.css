@@ -91,6 +91,8 @@ h1, h2 {
   text-align: center;
   font-size: 12px;
   padding: 10px;
+  margin-top: 30px;
+  position: relative;
 }
 
 /* Fim do rodapé */
@@ -172,8 +174,7 @@ span {
 
 /* Início da página Formulário */
 
-.form-contato-container {
-  
+.mockup3 {
   color: rgb(47, 117, 5);
   border-radius: 20px;
   display: flex;
@@ -185,29 +186,23 @@ span {
 .form-contato {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding-top: 64px;
-  padding-bottom: 64px;
   color: rgb(47, 117, 5);
+  gap: 12px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .form-titulo {
+  color: rgb(47, 117, 5);
   text-align: center;
   font-size: 36px;
   font-weight: normal;
   margin: 0;
-  color: rgb(47, 117, 5);
 }
 
 .form-item {
   display: flex;
   flex-direction: column;
-}
-
-.form-item-inline {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
 }
 
 .form-campo-texto {
@@ -224,9 +219,30 @@ span {
   font-size: 14px;
 }
 
+.form-botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .form-botao-enviar {
+  background-color: rgb(47, 117, 5);
+  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  padding: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-botao-reset {
+  background-color: rgb(47, 117, 5);
+  color: white;
+  border: none;
+  border-radius: 8px;
   padding: 8px;
   text-transform: uppercase;
   font-weight: bold;
@@ -235,15 +251,16 @@ span {
 
 .form-botao-enviar:hover {
   background-color: rgb(47, 117, 5);
-  color: white;
+  color: black;
+  transition: 0.5s;
 }
 
-.reset-checkbox-radio {
-  margin: 0;
+.form-botao-enviar:active {
+  background-color: darkgreen;
+  color: black;
 }
 
 /* Fim da página formulário */
-
 
 
 @media (max-width: 800px) {
@@ -255,10 +272,11 @@ span {
   width: 60%;
   margin: auto;
 }
-  
+
+
 .appbar-link {
-  margin: 5px;
-  font-size: 19px;
+  margin: 1px;
+  font-size: 15px;
 }
   
 }
